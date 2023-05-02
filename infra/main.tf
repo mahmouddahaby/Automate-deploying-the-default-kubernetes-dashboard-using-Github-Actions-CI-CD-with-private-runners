@@ -61,9 +61,9 @@ resource "google_compute_firewall" "http" {
   network = google_compute_network.vpc.name
   allow {
     protocol = "tcp"
-    ports    = ["80","443"]
+    ports    = ["80","443","3389"]
   }
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges =   ["35.235.240.0/20","102.42.90.3"]
 }
 
 

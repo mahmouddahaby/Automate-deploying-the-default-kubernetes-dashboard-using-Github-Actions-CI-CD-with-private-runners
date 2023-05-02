@@ -36,8 +36,9 @@ resource "google_compute_firewall" "allow-all" {
   priority = 100
   
   allow {
-    protocol = "all"
+    protocol = "tcp"
+    ports    = ["22"]
   }
   target_tags = ["ssh"]
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = ["35.235.240.0/20","102.42.90.3"]
 }

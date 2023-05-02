@@ -1,4 +1,4 @@
-project-id              = "silicon-smithy-377208"
+project-id              = "second-core-384817"
 region                  = "asia-east1"
 mangement-subnet-range  = "10.0.0.0/24"
 restricted-subnet-range = "10.0.1.0/24"
