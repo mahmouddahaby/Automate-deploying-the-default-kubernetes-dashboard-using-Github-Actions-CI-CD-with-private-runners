@@ -30,3 +30,11 @@ sudo apt update
 sudo apt install -y software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
 sudo apt install -y ansible
+
+# Install helm to apply nginx proxy
+
+# Add the official Helm GPG key
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
+# Install Helm
+sudo apt-get update && sudo apt-get install helm
