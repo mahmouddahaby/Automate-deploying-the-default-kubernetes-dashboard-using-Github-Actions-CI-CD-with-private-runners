@@ -6,11 +6,6 @@ resource "google_project_service" "container" {
   service = "container.googleapis.com"
 }
 
-#Reserve Static Ip
-resource "google_compute_address" "static-ip" {
-  name = "ingress"
-  region = var.region
-}
 #Create custom vpc
 
 resource "google_compute_network" "vpc" {
