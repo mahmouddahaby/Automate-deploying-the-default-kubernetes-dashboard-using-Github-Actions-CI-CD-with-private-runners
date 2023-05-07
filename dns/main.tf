@@ -24,7 +24,7 @@ resource "google_compute_managed_ssl_certificate" "k8s-Certificate" {
 
 #Create A Record 
 resource "google_dns_record_set" "k8s-dashboard" {
-  name = "k8s-dashboard"
+  name = "k8s.dashboard."
   type = "A"
   ttl = 300
   managed_zone = google_dns_managed_zone.k8s-DNS.name 

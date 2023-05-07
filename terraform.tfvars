@@ -1,4 +1,4 @@
-project-id              = "work-385509"
+project-id              = "myproject-386007"
 region                  = "asia-east1"
 mangement-subnet-range  = "10.0.0.0/24"
 restricted-subnet-range = "10.0.1.0/24"
