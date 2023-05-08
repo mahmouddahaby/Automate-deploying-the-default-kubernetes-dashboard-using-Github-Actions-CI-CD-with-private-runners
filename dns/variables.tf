@@ -13,3 +13,6 @@ variable "dns-zone-name" {
 variable "dns-name" {
   
 }
+variable "project" {
+  
+}

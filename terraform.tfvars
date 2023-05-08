@@ -6,4 +6,6 @@ pods-subnet-range       = "10.0.4.0/24"
 control-plane           = "172.16.0.0/28"
 cluster-range           = "192.168.0.0/16"
 svc-range               = "10.96.0.0/16"
-
+ip = "k-ip"
+domain = "k8s-d4board.com."
+dns-name = "k8s-dns"
