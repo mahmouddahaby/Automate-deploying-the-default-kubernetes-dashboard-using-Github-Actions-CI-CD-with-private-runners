@@ -14,7 +14,7 @@ output "ip-adress" {
 }
 
 output "dns" {
-  value = module.dns.dns-managed-zone
+  value = module.dns.dns-record-name
 }
 
 output "certificate" {
