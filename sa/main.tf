@@ -17,6 +17,21 @@ resource "google_project_iam_member" "gke_sa" {
   member  = "serviceAccount:${google_service_account.custom_gke_sa.email}"
   project = var.project
 }
+resource "google_project_iam_member" "gke_cluster_sa" {
+  role    = "roles/container.clusterAdmin"
+  member  = "serviceAccount:${google_service_account.custom_gke_sa.email}"
+  project = var.project
+}
+resource "google_project_iam_member" "gke_network_sa" {
+  role    = "roles/compute.networkAdmin"
+  member  = "serviceAccount:${google_service_account.custom_gke_sa.email}"
+  project = var.project
+}
+resource "google_project_iam_member" "gke_dns_sa" {
+  role    = "roles/dns.admin"
+  member  = "serviceAccount:${google_service_account.custom_gke_sa.email}"
+  project = var.project
+}
 resource "google_project_iam_member" "gke_storage_sa" {
   role    = "roles/storage.admin"
   member  = "serviceAccount:${google_service_account.custom_gke_sa.email}"

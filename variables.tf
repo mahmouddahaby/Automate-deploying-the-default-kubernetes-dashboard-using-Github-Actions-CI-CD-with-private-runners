@@ -14,13 +14,13 @@ variable "restricted-subnet-range" {
 
 }
 variable "ip" {
-  
+
 }
 variable "dns-name" {
-  
+
 }
 variable "domain" {
-  
+
 }
 variable "pods-subnet-range" {
 
