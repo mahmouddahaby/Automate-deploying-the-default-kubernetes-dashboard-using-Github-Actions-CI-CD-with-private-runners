@@ -14,15 +14,15 @@ resource "google_dns_managed_zone" "k8s-DNS" {
 
 
 #Create Manged Certificate 
-resource "google_compute_managed_ssl_certificate" "k8s-Certificate" {
-  provider = google-beta
-  project  = var.project
-  name     = "k8s-d4board-com"
+# resource "google_compute_managed_ssl_certificate" "k8s-Certificate" {
+#   provider = google-beta
+#   project  = var.project
+#   name     = "k8s-d4board-com"
 
-  managed {
-    domains = ["k8s-d4board.com."]
-  }
-}
+#   managed {
+#     domains = ["k8s-d4board.com."]
+#   }
+# }
 
 
 #Create A Record 
